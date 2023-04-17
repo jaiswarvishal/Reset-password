@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reset new password</title>
+</head>
+<body>
+
+<!-- *Code-Decriptions
+stpe 1: created one container
+step 2: inside the container, created section
+stpe 2: inside section, took h1->heading and p->paragraph
+stpe 3: now indise section, created form
+stpe 4: inside form,  created form_section and inside the from_section created form_control
+stpe 5: inside form_control, label and input
+stpe 6: made one button-->
+    <div class="container">
+        <div class="section">
+            <h1>
+                Create a new password
+            </h1>
+            <div class="para">
+                <p>Create a new password, confirm it and you done!</p>
+            </div>
+
+            <form autocomplete="off" onsubmit ="return verifyPassword()">
+                    <div class="form_section">
+                        <div class="form_control">
+                            <label for="craetePassword">Create a password</label>
+                            <input type="password" name="craetePassword" id="craetePassword">
+                            <span id = "message1" style="color:red"> </span> 
+                        </div>
+
+                        <div class="form_control">
+                            <label for="confirmPassword">Confirm new password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword">
+                            <span id = "message2" style="color:red"> </span> <br><br>
+                        </div>
+                    </div>
+                    
+                    <div class="button_section">
+                        <button type="submit">Reset password</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="index.js"></script>
+
+
+    </body>
+</html>
+                        
